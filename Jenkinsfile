@@ -31,5 +31,12 @@ pipeline{
             }
         }
     }
+    stage('Deploy to Kubernetes') {
+                steps {
+                    script {
+                        // Apply the Kubernetes manifests
+                        bat "kubectl apply -f deploymentservice.yaml"
+                    }
+                }
 }
 }
