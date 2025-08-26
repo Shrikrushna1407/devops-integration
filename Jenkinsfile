@@ -38,5 +38,6 @@ pipeline{
                         bat "kubectl apply -f deploymentservice.yaml"
                     }
                 }
+    }
 }
 }
